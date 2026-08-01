@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "calculator": {
+      "command": "<YOUR-PATH>\\mcp-tutorial\\.venv\\Scripts\\python.exe",
+      "args": [
+        "<YOUR-PATH>\\mcp-tutorial\\server_basic.py"
+      ]
+    }
+  }
+}

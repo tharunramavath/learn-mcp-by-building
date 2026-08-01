@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "calculator": {
+      "type": "stdio",
+      "command": ".venv\\Scripts\\python.exe",
+      "args": [
+        "server_basic.py"
+      ]
+    },
+    "weather": {
+      "type": "stdio",
+      "command": ".venv\\Scripts\\python.exe",
+      "args": [
+        "server_weather.py"
+      ]
+    }
+  }
+}

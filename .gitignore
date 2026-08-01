@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Streamlit secrets (contains API keys)
+.streamlit/secrets.toml
+
+# Logs / scratch
+*.log
+*.tmp
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/*
+!.vscode/mcp.json
+.idea/
