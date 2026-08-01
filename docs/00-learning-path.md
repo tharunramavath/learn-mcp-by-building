@@ -12,8 +12,8 @@ feel simple, because each one introduces a skill the later steps assume.
 
 ## Phase 0 — The 30-second idea (5 min)
 
-1. Read **`README.md` → "What is MCP?"** — the "USB-C for AI" analogy.
-2. Read **`docs/02-glossary.md`** — skim the table. Don't memorize it; just get
+1. Read **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → "What is MCP?"** — the "USB-C for AI" analogy.
+2. Read **[`02-glossary.md`](02-glossary.md)** — skim the table. Don't memorize it; just get
    a feel for the vocabulary (Host, Client, Server, Tool, Resource, Prompt).
 3. Look at the project layout in the README so you know which file is which.
 
@@ -23,7 +23,7 @@ feel simple, because each one introduces a skill the later steps assume.
 
 ## Phase 1 — Theory first (20 min)
 
-Read **`docs/01-concepts.md`** fully, then come back to it later as reference.
+Read **[`01-concepts.md`](01-concepts.md)** fully, then come back to it later as reference.
 
 Pay special attention to the **3 participants** (Host → Client → Server) and the
 **2 layers** (data layer = JSON-RPC messages, transport layer = stdio / HTTP).
@@ -36,7 +36,7 @@ What travels over stdio?
 
 ## Phase 2 — Build the first server (20 min)
 
-Now the theory becomes code. Follow **`README.md` → Step 1**:
+Now the theory becomes code. Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 1**:
 
 1. Read `server_basic.py` top to bottom.
 2. Notice the 3 primitives: `@mcp.tool()` (add/multiply/greet),
@@ -52,7 +52,7 @@ with it.
 
 ## Phase 3 — Prove it with a tiny client (20 min)
 
-Follow **`README.md` → Step 2**. Run `python test_client_basic.py` and watch the
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 2**. Run `python test_client_basic.py` and watch the
 output **in order**:
 
 1. Discovery (`server/discover`)
@@ -70,7 +70,7 @@ seen with your own eyes.
 
 ## Phase 4 — The Inspector (visual tool) (20 min)
 
-Follow **`README.md` → Step 3**. The Inspector gives you the same conversation
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 3**. The Inspector gives you the same conversation
 from Phase 3, but in a clickable web UI.
 
 1. Double-click `run-inspector.cmd` (or run the npx command).
@@ -79,7 +79,7 @@ from Phase 3, but in a clickable web UI.
 4. Call `add` with `{"a": 10, "b": 5}`.
 5. Open the **Protocol** tab and watch the raw JSON-RPC fly by.
 
-If the UI doesn't look like YouTube tutorials, read **`docs/03-inspector-v2-guide.md`**
+If the UI doesn't look like YouTube tutorials, read **[`03-inspector-v2-guide.md`](03-inspector-v2-guide.md)**
 — it maps the old v1 layout to the new v2 tabs.
 
 **Checkpoint:** find the `tools/call` request you just made in the Protocol tab.
@@ -88,7 +88,7 @@ If the UI doesn't look like YouTube tutorials, read **`docs/03-inspector-v2-guid
 
 ## Phase 5 — Plug into a real AI app (20 min)
 
-Follow **`README.md` → Step 4**. This is the payoff — your server running inside
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 4**. This is the payoff — your server running inside
 a tool you already use:
 
 1. **Claude Desktop** — copy `claude_desktop_config.json` to the real config
@@ -102,7 +102,7 @@ a tool you already use:
 
 ## Phase 6 — Real-world upgrade: weather (20 min)
 
-Follow **`README.md` → Step 5**. This shows how real servers differ from toys:
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 5**. This shows how real servers differ from toys:
 
 1. Read `server_weather.py` — async tools, an external HTTP call, a two-step
    lookup (grid point → forecast).
@@ -115,7 +115,7 @@ Follow **`README.md` → Step 5**. This shows how real servers differ from toys:
 
 ## Phase 7 — Be the host: chat with your servers (30 min)
 
-Follow **`README.md` → Step 7**. Until now the servers were "dumb" — this is
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 7**. Until now the servers were "dumb" — this is
 where you become the **AI app** (the host):
 
 1. Read `mcp_host.py` — a sync wrapper around the async MCP client. Note the
@@ -135,7 +135,7 @@ your server, and who runs it.
 
 ## Phase 8 — Under the hood (15 min)
 
-Follow **`README.md` → Step 6**. Re-read the two big ideas in `docs/01-concepts.md`:
+Follow **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Step 6**. Re-read the two big ideas in [`01-concepts.md`](01-concepts.md):
 
 1. **Two layers** — data (what) vs transport (how).
 2. **Stateless + discovery** — the client always asks before using.
@@ -148,7 +148,7 @@ Then re-read the glossary — it should feel obvious now.
 
 ## Phase 9 — Challenges (do these yourself)
 
-From **`README.md` → Challenges** — no hints, that's the point:
+From **[`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme) → Challenges** — no hints, that's the point:
 
 1. Add a `divide` tool. What happens when `b == 0`?
 2. Add a resource template (`weather://city/{city}`).
@@ -164,10 +164,10 @@ answer.
 
 | When you're ready | Read |
 |---|---|
-| Definitions of any term | `docs/02-glossary.md` |
-| Any MCP concept in depth | `docs/01-concepts.md` |
-| "Why not just use function calling?" | `docs/04-mcp-vs-alternatives.md` |
-| Any question not answered here | `docs/05-faq.md` |
+| Definitions of any term | [`02-glossary.md`](02-glossary.md) |
+| Any MCP concept in depth | [`01-concepts.md`](01-concepts.md) |
+| "Why not just use function calling?" | [`04-mcp-vs-alternatives.md`](04-mcp-vs-alternatives.md) |
+| Any question not answered here | [`05-faq.md`](05-faq.md) |
 | The full spec | <https://modelcontextprotocol.io/specification/latest> |
 | More real servers | <https://github.com/modelcontextprotocol/servers> |
 

@@ -10,7 +10,7 @@ steps — click the link in each answer to go deeper.
 **What exactly is MCP?**
 An open standard that lets AI apps (Claude, ChatGPT, VS Code, Cursor) connect to
 external tools and data. "USB-C for AI": build the integration once, plug it
-into any MCP-capable app. → `docs/01-concepts.md`
+into any MCP-capable app. → [`01-concepts.md`](01-concepts.md)
 
 **Is MCP a programming language or a framework?**
 Neither. It's a **protocol** — a defined format for messages (JSON-RPC 2.0) and
@@ -37,7 +37,7 @@ Google, Microsoft, and many others.
   connection.
 - **Server** = your program that exposes tools, resources, and prompts.
 
-One host can talk to many servers at once — each via its own client. → `docs/01-concepts.md`
+One host can talk to many servers at once — each via its own client. → [`01-concepts.md`](01-concepts.md)
 
 **What's the difference between a tool, a resource, and a prompt?**
 - **Tool** — something the model can *call to act* (calculate, fetch, send).
@@ -56,7 +56,7 @@ prompt.
 **Why can't I `print()` in a stdio server?**
 Because stdout *is* the protocol channel. A stray `print()` corrupts the JSON-RPC
 stream and the server silently breaks. Use `logging` (stderr) instead. This is
-the golden rule — see `docs/01-concepts.md`.
+the golden rule — see [`01-concepts.md`](01-concepts.md).
 
 ---
 
@@ -65,7 +65,7 @@ the golden rule — see `docs/01-concepts.md`.
 **Isn't MCP just function calling?**
 Function calling = the *grammar* an LLM uses to request a tool. MCP = the
 *transport + discovery* standard that carries tools and data between apps and
-servers. They're complementary. → `docs/04-mcp-vs-alternatives.md`
+servers. They're complementary. → [`04-mcp-vs-alternatives.md`](04-mcp-vs-alternatives.md)
 
 **Why does Step 7 (the host) use Groq function calling *and* MCP?**
 The Groq API decides *which* tool to call (function calling). The MCP host
@@ -87,7 +87,7 @@ spawn it and start the conversation (Step 2's script or the Inspector in Step 3)
 
 **Why does the Inspector look different from YouTube tutorials?**
 This project runs Inspector v2 (tabs), while older tutorials show v1 (one
-screen). They inspect the same protocol. → `docs/03-inspector-v2-guide.md`
+screen). They inspect the same protocol. → [`03-inspector-v2-guide.md`](03-inspector-v2-guide.md)
 
 **Do the config files contain my paths?**
 No — the repo is path-independent. `inspector.json` and `.vscode/mcp.json` use

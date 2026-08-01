@@ -1,7 +1,7 @@
 # 01 · Everything you need to learn about MCP
 
 This is your reference sheet. Read it once, then keep it as a cheat sheet while
-you go through the steps in the `README.md`.
+you go through the steps in the [`README.md`](https://github.com/tharunramavath/learn-mcp-by-building#readme).
 
 ---
 

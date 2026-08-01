@@ -1,0 +1,41 @@
+site_name: Learn MCP by Building
+site_description: Hands-on guide to the Model Context Protocol - build a calculator server, a live weather server, and your own AI host.
+site_url: https://tharunramavath.github.io/learn-mcp-by-building/
+repo_url: https://github.com/tharunramavath/learn-mcp-by-building
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: red
+    accent: red
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - admonition
+
+nav:
+  - Home: index.md
+  - Learning Path: 00-learning-path.md
+  - Concepts: 01-concepts.md
+  - Glossary: 02-glossary.md
+  - Inspector Guide: 03-inspector-v2-guide.md
+  - MCP vs Alternatives: 04-mcp-vs-alternatives.md
+  - FAQ: 05-faq.md
