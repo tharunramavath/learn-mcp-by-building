@@ -9,6 +9,7 @@
 [![MCP SDK 2.x](https://img.shields.io/badge/MCP%20SDK-2.x-000000)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build time](https://img.shields.io/badge/build%20time-2%E2%80%933%20hours-brightgreen)]()
+[![Read the docs](https://img.shields.io/badge/Docs-GitHub%20Pages-b71c1c)](https://tharunramavath.github.io/learn-mcp-by-building/)
 
 **MCP (Model Context Protocol)** is the open standard that lets AI apps (Claude,
 ChatGPT, VS Code, Cursor) talk to your tools and data — **"USB-C for AI"**.
@@ -90,6 +91,9 @@ just ran a full MCP conversation. Now go do the steps below.
 > - `docs/03-inspector-v2-guide.md` — how the new Inspector v2 UI maps to the classic (v1) layout
 > - `docs/04-mcp-vs-alternatives.md` — how MCP compares to plain function calling, provider tools, and REST APIs
 > - `docs/05-faq.md` — a deeper FAQ than the short one at the bottom of this README
+
+> 💡 Prefer reading in the browser? The same docs are hosted at
+> **[tharunramavath.github.io/learn-mcp-by-building](https://tharunramavath.github.io/learn-mcp-by-building/)**.
 
 ---
 
