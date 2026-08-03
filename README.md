@@ -11,6 +11,8 @@
 [![Build time](https://img.shields.io/badge/build%20time-2%E2%80%933%20hours-brightgreen)]()
 [![Read the docs](https://img.shields.io/badge/Docs-GitHub%20Pages-b71c1c)](https://tharunramavath.github.io/learn-mcp-by-building/)
 
+> 📖 **Full docs:** [tharunramavath.github.io/learn-mcp-by-building](https://tharunramavath.github.io/learn-mcp-by-building/)
+
 **MCP (Model Context Protocol)** is the open standard that lets AI apps (Claude,
 ChatGPT, VS Code, Cursor) talk to your tools and data — **"USB-C for AI"**.
 This repo is a from-zero, **build-it-yourself** tutorial: every concept becomes
